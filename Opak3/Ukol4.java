@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ukol4 {
@@ -5,7 +6,7 @@ public class Ukol4 {
         Scanner sc = new Scanner(System.in);
         boolean isOn = true;
         int input;
-        String ar = "";
+        ArrayList<Integer> ar = new ArrayList<Integer>();
 
         int nums = -999;
 
@@ -15,10 +16,10 @@ public class Ukol4 {
                 if (nums == -999){
                     nums = input;
                 }else if(nums > 0){
-                    ar += input + " ";
+                    ar.add(input);
                     nums--;
                 }else {
-                    System.out.println(ar.indexOf(input + " "));
+                    System.out.println(ar.indexOf(input));
 
                 }
 
